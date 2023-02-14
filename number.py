@@ -40,7 +40,8 @@ class Number:
 
         returns: bool
         """
-        pass
+        if self.value:
+            return 0
 
     def get_divisors(self):
         """
@@ -56,7 +57,7 @@ class Number:
 
         returns: int
         """
-        pass
+        return len(self.value)
 
     def get_sum(self):
         """
