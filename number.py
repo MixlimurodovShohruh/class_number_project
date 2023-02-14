@@ -40,8 +40,11 @@ class Number:
 
         returns: bool
         """
-        if self.value:
-            return 0
+        if self.value//range(self.value):
+
+            return True
+        else:
+            return False 
 
     def get_divisors(self):
         """
@@ -67,7 +70,6 @@ class Number:
         returns: int
         """
         pass
-
     def get_reverse(self):
         """
         Returns the number in reverse.
@@ -98,7 +100,7 @@ class Number:
 
         returns: int
         """
-        pass
+        return max(self.value)
 
     def get_min(self):
         """
@@ -106,7 +108,8 @@ class Number:
 
         returns: int
         """
-        pass
+        return min(self.value)
+
 
     def get_average(self):
         """
@@ -130,8 +133,7 @@ class Number:
 
         returns: list
         """
-        pass
-
+        return list[range(self.value)]
     def get_frequency(self):
         """
         Returns a dictionary of the frequency of each digit in the number.
@@ -142,5 +144,5 @@ class Number:
     
 
 # Create a new instance of Number
-number = Number(3)
-print(number.get_length())
+number = Number(3555)
+print(number.get_range())
