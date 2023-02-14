@@ -57,7 +57,8 @@ class Number:
 
         returns: int
         """
-        return len(self.value)
+        return len(str(self.value))
+    
 
     def get_sum(self):
         """
@@ -142,3 +143,4 @@ class Number:
 
 # Create a new instance of Number
 number = Number(3)
+print(number.get_length())
