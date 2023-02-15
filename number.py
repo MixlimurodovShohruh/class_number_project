@@ -52,7 +52,7 @@ class Number:
 
         returns: list
         """
-        pass
+        
 
     def get_length(self):
         """
@@ -92,7 +92,11 @@ class Number:
 
         returns: list
         """
-        pass
+        ls=[]
+        for i in str(self.value):
+            ls.append(int(i))
+        return ls
+
 
     def get_max(self):
         """
@@ -100,7 +104,11 @@ class Number:
 
         returns: int
         """
-        return max(self.value)
+        mx=self.value%10
+        for i in str(self.value):
+            if int(i)>mx:
+                mx=int(i)
+        return mx
 
     def get_min(self):
         """
@@ -108,8 +116,11 @@ class Number:
 
         returns: int
         """
-        return min(self.value)
-
+        mn=self.value%10
+        for i in str(self.value):
+            if int(i) < mn:
+                mn = int(i)
+        return mn
 
     def get_average(self):
         """
@@ -133,7 +144,7 @@ class Number:
 
         returns: list
         """
-        return list[range(self.value)]
+        return list[range(self.value)]                                                                                                  
     def get_frequency(self):
         """
         Returns a dictionary of the frequency of each digit in the number.
@@ -144,5 +155,5 @@ class Number:
     
 
 # Create a new instance of Number
-number = Number(3555)
-print(number.get_range())
+number = Number(3575)
+print(number.get_min())
